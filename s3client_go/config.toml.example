@@ -1,0 +1,16 @@
+[server]
+port = 9090
+#对应nginx的location
+location = "/files"
+
+[s3]
+endpoint = "http://10.12.113.13"
+access_key = "X6IY9WQEEQ1OCNE0"
+secret_key = "BXmrz0WXnV5RzSbarHunq20"
+bucket = "bucket-9d9d"
+
+#区域 us-east-1
+region = "cn"
+#云存储选false 自建Minio等选true
+use_path_style = true
+
