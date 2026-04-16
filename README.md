@@ -13,8 +13,10 @@
 > 8. bucket 不解释。
 
 ## 使用s3client_go需要配置nginx的相关参数
+```
     location ~* /files/(.*)\.(txt|pdf|xml|zip|jpg|jpeg|png|xls|xlsx)$ {
        proxy_set_header X-Real-IP $remote_addr;
        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
        proxy_pass http://upstream_s3;
    }
+```
