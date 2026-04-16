@@ -1,5 +1,5 @@
 # s3_download
-## 使用shell及nginx njs组件下获取对象存储中的文件
+## 使用shell、nginx njs及go组件下获取对象存储中的文件
 > 目前测试下来可以下载Seaweedfs\Minio\OSS\OBS\US3中的文件。其他对象存储请自行测试！
 
 ## 配置awsign.js中对象存储相关参数
